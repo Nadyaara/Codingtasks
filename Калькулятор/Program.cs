@@ -10,14 +10,19 @@ namespace Калькулятор
            {
             double a, b;
             string c;
-           
-             try
+                try
              {
                 Console.WriteLine("Введите первую переменную: ");
                 a = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Выбирите действие: 1) сложение 2)выситание 3) умножение 4) деление 5) Возведение в квадрат");
+                    c = Console.ReadLine();
+                    b = 0;
+                    if (c != "5")
+                    {
+                        Console.WriteLine("Введите вторую переменную: ");
+                        b = double.Parse(Console.ReadLine());
+                    }
 
-                Console.WriteLine("Введите вторую переменную: ");
-                b = double.Parse(Console.ReadLine());
              }
              catch(Exception)
              {
@@ -25,9 +30,6 @@ namespace Калькулятор
                 Console.ReadLine();
                 continue;
              }
-
-             Console.WriteLine("Выбирите действие: 1) сложение 2)выситание 3) умножение 4) деление ");
-             c = Console.ReadLine();
 
                 switch (c)
                 {
@@ -49,7 +51,9 @@ namespace Калькулятор
                         else
                             Console.WriteLine(a / b);
                         break;
-
+                    case "5":
+                        Console.WriteLine(a * a);
+                        break;
                     default:
                         Console.WriteLine("Попробуйте еще раз.");
                         break;

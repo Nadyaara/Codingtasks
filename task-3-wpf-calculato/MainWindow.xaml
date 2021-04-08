@@ -5,8 +5,85 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:task_3_wpf_calculato"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Калькулятор" Height="450" Width="800">
+    <Grid x:Name="MainRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Введите выражение" Grid.ColumnSpan="4" x:Name="text"/>
+        <Button Grid.Column="0" Grid.Row="1" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">1</Button>
+        <Button Grid.Column="1" Grid.Row="1" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">2</Button>
+        <Button Grid.Column="2" Grid.Row="1" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">3</Button>
+        <Button Grid.Column="0" Grid.Row="2" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">4</Button>
+        <Button Grid.Column="1" Grid.Row="2" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">5</Button>
+        <Button Grid.Column="2" Grid.Row="2" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">6</Button>
+        <Button Grid.Column="0" Grid.Row="3" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">7</Button>
+        <Button Grid.Column="1" Grid.Row="3" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">8</Button>
+        <Button Grid.Column="2" Grid.Row="3" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">9</Button>
+        <Button Grid.Column="0" Grid.Row="4" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">0</Button>
+        <Button Grid.Column="4" Grid.Row="1" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">+</Button>
+        <Button Grid.Column="4" Grid.Row="2" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">-</Button>
+        <Button Grid.Column="4" Grid.Row="3" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">*</Button>
+        <Button Grid.Column="4" Grid.Row="4" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">/</Button>
+        <Button Grid.Column="1" Grid.Row="4" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">=</Button>
+        <Button Grid.Column="2" Grid.Row="4" BorderBrush="Black" Foreground="Black" OpacityMask="White" Background="{x:Null}" FontFamily="Times New Roman" FontSize="40">C</Button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </Grid>
 </Window>

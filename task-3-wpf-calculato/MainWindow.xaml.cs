@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace task_3_wpf_calculato
+namespace Калькулятор
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -23,6 +24,28 @@ namespace task_3_wpf_calculato
         public MainWindow()
         {
             InitializeComponent();
+            foreach(UIElement el in MainRoot.Children)
+            {
+                if (el is Button)
+                {
+                    ((Button)el).Click += Button_Click;
+                }
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string str = (string)((Button)e.OriginalSource).Content;
+            if (str == "C")
+                text.Text = "";
+            else if (str == "=")
+            {
+                string value = new DataTable().Compute(text.Text, null).ToString();
+                text.Text = value;
+            }
+
+            else
+                text.Text += str;
         }
     }
 }
