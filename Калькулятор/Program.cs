@@ -61,6 +61,7 @@ namespace Калькулятор
                 }
 
                 Console.ReadLine();
+                Console.Clear();
             }
 
             
