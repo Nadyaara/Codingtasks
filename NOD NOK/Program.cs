@@ -9,6 +9,7 @@ namespace NOD_NOK
             while (true)
             {
                 int a, b, c;
+                double d, k;
                 try
                 {
                     Console.Write("Введите первое число: ");
@@ -25,31 +26,34 @@ namespace NOD_NOK
                     continue;
                 }
 
-                Console.WriteLine("НОД={0}", nod(a, b, c));
-                Console.WriteLine("НОК={0}", nok(a, b, c));
+                d = nod(a, b);
+                k = nok(a, b);
+
+                 
+                Console.WriteLine("НОД={0}", nod(d, c));
+                Console.WriteLine("НОК={0}", nok(k, c));
                 Console.ReadKey();
             }
+
         }
 
-        static double nod(double a, double b, double c)
+        static double nod(double x, double y)
         {
-            if (b < 0)
-                b = -b;
-            if (a < 0)
-                a = -a;
-            if (c < 0)
-                c = -c;
-            while (b > 0)
+            if (y < 0)
+                y = -y;
+            if (x < 0)
+                x = -x;
+            while (y > 0)
             {
-                double temp = b;
-                b = a % b;
-                a = temp;
+                double temp = y;
+                y = x % y;
+                x = temp;
             }
-            return a;
+            return x;      
          }
-         static double nok(double a, double b, double c)
+         static double nok(double a, double b)
          {
-                return Math.Abs(a*b*c)/nod(a, b, c);
+                return Math.Abs(a*b)/nod(a, b);
          }         
      
     }
