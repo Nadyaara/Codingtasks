@@ -27,7 +27,6 @@ namespace Блокнот
 
         private void Color(object sender, RoutedEventArgs e)
         {
-            TextBox.Foreground = Foreground.;
         }
 
         private void Shrift(object sender, RoutedEventArgs e)
@@ -61,9 +60,9 @@ namespace Блокнот
 
         private void Shrift2(object sender, RoutedEventArgs e)
         {
-            TextBox.FontStyle = FontStyles.
+            true;
+            TextBox.TextDecorations = TextDecorations.Underline;
         }
-
         private void Text1(object sender, RoutedEventArgs e)
         {
 

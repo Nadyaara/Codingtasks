@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C7A8FBC-A54B-43D8-B75D-9D3655D72907}</ProjectGuid>
+    <ProjectGuid>{40A9A53B-1BBF-4B45-9C8C-35FFF7E3DB73}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>task_3_wpf_calculato</RootNamespace>
-    <AssemblyName>task-3-wpf-calculato</AssemblyName>
+    <RootNamespace>task3</RootNamespace>
+    <AssemblyName>task3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

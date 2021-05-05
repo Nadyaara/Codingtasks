@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace task_3_wpf_calculato.Properties
+namespace task3.Properties
 {
     /// <summary>
     ///   Класс ресурсов со строгим типом для поиска локализованных строк и пр.
@@ -43,7 +43,7 @@ namespace task_3_wpf_calculato.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("task_3_wpf_calculato.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("task3.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

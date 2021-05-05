@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace task_3_wpf_calculato
+namespace task3
 {
     /// <summary>
     /// Логика взаимодействия для App.xaml

@@ -27,8 +27,9 @@
             <Button Content="Очистка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="323" Height="38" Click="Clean"/>
             <Button Content="Выход" HorizontalAlignment="Left" VerticalAlignment="Top" Width="323" Height="38" Click="Exit" Foreground="Black"/>
         </Menu>
-        <TextBox x:Name="TextBox" Height="337" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="5,85,-3,-2"/>
-
+        <TextBox x:Name="TextBox" Height="337" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="5,85,-3,-2" TextDecorations="Underline"/>
+      
+      
 
     </Grid>
 </Window>

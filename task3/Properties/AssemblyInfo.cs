@@ -7,11 +7,11 @@ using System.Windows;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набор атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("task-3-wpf-calculato")]
+[assembly: AssemblyTitle("task3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("task-3-wpf-calculato")]
+[assembly: AssemblyProduct("task3")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
