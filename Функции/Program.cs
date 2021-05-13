@@ -6,16 +6,23 @@ namespace calculatorfunkcii
     {
         static void Main(string[] args)
         {
-
             while (true)
             {
                 Console.WriteLine("\n Введите первую переменную \n" +
                    "\n операцию( + , - , * , / , ^ ) \n " +
                     " \n вторую переменную \n");
+                try
+                {
                     Console.WriteLine(" \nРезультат: " + Calculate(Convert.ToDouble(Console.ReadLine()), Convert.ToChar(Console.ReadLine()), Convert.ToDouble(Console.ReadLine())));
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Ошибка! Проверьте данные!!!");
+                    Console.ReadLine();
+                    continue;
+                }
             }
         }
-
         static double Calculate(double a, char c, double b)
         {
             switch (c)
@@ -46,24 +53,33 @@ namespace calculatorfunkcii
         {
             return a - b;
         }
-
         static double step(double a, double b)
         {
-            return Math.Pow(a, b);
+            if (a > 0 && b == Convert.ToInt32(b))
+            {
+               Console.WriteLine("Ошибка, попробуйте заново");
+               return 0;
+            }
+            else
+            {
+                return Math.Pow(a, b);
+            }
         }
-
         static double del(double a, double b)
         {
+            if (b == 0)
+            {
+                throw new DivideByZeroException("Деление на ноль");
+            }
+            else
+            {
                 return a / b;
-
+            }
         }
         static double umn(double a, double b)
         {
             return a * b;
         }
-
-
-
 
     }
 }
