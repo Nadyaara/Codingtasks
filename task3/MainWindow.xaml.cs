@@ -21,6 +21,7 @@ namespace task3
     /// </summary>
     public partial class MainWindow : Window
     {
+        int a = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -39,11 +40,29 @@ namespace task3
             string str = (string)((Button)e.OriginalSource).Content;
 
             if (str == "C")
+            {
                 text.Text = "";
-            else if (str=="=")
+                a = 0;
+            }
+            else if (str == ".")
+            {
+                if (a == 0)
+                {
+                    text.Text += str;
+                    a += 1;
+                }
+            }
+
+            else if (str == "=")
             {
                 string value = new DataTable().Compute(text.Text, null).ToString();
                 text.Text = value;
+                a = 0;
+            }
+            else if (str == "+" || str == "*" || str == "/" || str == "-" || str == "^")
+            {
+                a = 0;
+                text.Text += str;
             }
             else
                 text.Text += str;
