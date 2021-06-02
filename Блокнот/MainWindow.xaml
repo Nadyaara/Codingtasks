@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Блокнот" Height="450" Width="683">
     <Grid>
-        <Menu HorizontalAlignment="Left" Height="80
-              " VerticalAlignment="Top" Width="677" RenderTransformOrigin="0.5,0.5" Margin="2,0,-4,0">
+        <Menu x:Name="Font1" HorizontalAlignment="Left" Height="80
+              " VerticalAlignment="Top" Width="694" RenderTransformOrigin="0.5,0.5" Margin="-3,-2,-16,0">
             <Menu.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -23,13 +23,15 @@
             <Button Content="B" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Height="38" Click="Shrift" IsCancel="True" FontWeight="Bold" FontSize="22"/>
             <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Height="38" Click="Shrift1" IsCancel="True" FontSize="22" FontStyle="Italic" Content="B"/>
             <Button Content="_B_" HorizontalAlignment="Left" VerticalAlignment="Top" Width="48" Height="38" Click="Shrift2" IsCancel="True" FontSize="22" RenderTransformOrigin="0.452,0.579"/>
-            <ComboBox x:Name ="Fonts" Width="120" ItemsSource="{x:Static Fonts.SystemFontFamilies}" ToolTip="Font" Foreground="Black"/>
+            <Button x:Name="Font4" Content="ШРИФТ 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="38" Click="Font4_Click"/>
+            <Button x:Name="Font2" Content="ШРИФТ 2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="38" Click="Button_Click" FontFamily="Times New Roman"/>
+            <Button x:Name="Font3" Content="ШРИФТ 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Height="38" FontFamily="Viner Hand ITC" Click="Font3_Click"/>
             <Button Content="Очистка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="323" Height="38" Click="Clean"/>
             <Button Content="Выход" HorizontalAlignment="Left" VerticalAlignment="Top" Width="323" Height="38" Click="Exit" Foreground="Black"/>
         </Menu>
-        <TextBox x:Name="TextBox" Height="337" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="5,85,-3,-2" TextDecorations="Underline"/>
-      
-      
+        <TextBox x:Name="TextBox" Height="337" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="8,88,-6,-5" FontFamily="Times New Roman"/>
+
+
 
     </Grid>
 </Window>

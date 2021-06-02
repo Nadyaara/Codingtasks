@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Drawing;
 
 namespace Блокнот
 {
@@ -20,57 +21,92 @@ namespace Блокнот
     /// </summary>
     public partial class MainWindow : Window
     {
+        bool a = false;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Color(object sender, RoutedEventArgs e)
+        private void Color(object sender, RoutedEventArgs e) //фон и цвет
         {
+            TextBox.Foreground = Brushes.Black;
+            TextBox.Background = Brushes.White;
         }
 
-        private void Shrift(object sender, RoutedEventArgs e)
+        private void Shrift(object sender, RoutedEventArgs e) //жирный
         {
-            
-        }
+            a = !a;
+            if (a)
 
-        private void Text(DependencyProperty property, object value)
             {
-                if (value!= null)
-                {
-                    TextBox.SelectionBrush.ApplyAnimationClock (property, null);
-                }
+                TextBox.FontWeight = FontWeight.FromOpenTypeWeight(999);
             }
-
-        private void Clean(object sender, RoutedEventArgs e) => TextBox.Clear();
-
-        private void Exit(object sender, RoutedEventArgs e) => Close();
-
-        private void Color1(object sender, RoutedEventArgs e)
-        {
-
+            else
+            {
+                TextBox.FontWeight = FontWeight.FromOpenTypeWeight(32);
+            }
         }
 
-        private void Color2(object sender, RoutedEventArgs e)
-        {
+        private void Clean(object sender, RoutedEventArgs e) => TextBox.Clear();  //очистить
 
+        private void Exit(object sender, RoutedEventArgs e) => Close();    //закрыть
+
+        private void Color1(object sender, RoutedEventArgs e) //фон и цвет
+        {
+            TextBox.Foreground = Brushes.White;
+            TextBox.Background = Brushes.Black;
         }
 
-        private void Shrift1(object sender, RoutedEventArgs e) => TextBox.FontStyle = FontStyles.Italic;
+        private void Color2(object sender, RoutedEventArgs e)  //фон и цвет
+        {
+            TextBox.Foreground = Brushes.Yellow;
+            TextBox.Background = Brushes.Black;
+        }
 
+        private void Shrift1(object sender, RoutedEventArgs e)
+
+        {
+            a = !a;
+            if (a)
+
+            {
+                TextBox.FontStyle = FontStyles.Italic; //косой
+            }
+            else
+            {
+                TextBox.FontStyle = FontStyles.Normal;
+            }
+        }
+
+          
         private void Shrift2(object sender, RoutedEventArgs e)
         {
-            true;
-            TextBox.TextDecorations = TextDecorations.Underline;
+                a = !a;
+                if (a)
+
+                {
+                     TextBox.TextDecorations = TextDecorations.Underline;//подчеркивание
+                }
+                else
+                {
+                TextBox.TextDecorations = null;
+                }
         }
-        private void Text1(object sender, RoutedEventArgs e)
-        {
 
+        private void Font4_Click(object sender, RoutedEventArgs e) //Шрифт1
+        {
+            TextBox.FontFamily = new FontFamily("Comic Sans MS");
         }
 
-        private void Text2(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)//Шрифт2
         {
+            TextBox.FontFamily = new FontFamily("Times News Roman");
+        }
 
+        private void Font3_Click(object sender, RoutedEventArgs e)//Шрифт3
+        {
+            TextBox.FontFamily = new FontFamily("Viner Hand ITC");
         }
     }
 }
