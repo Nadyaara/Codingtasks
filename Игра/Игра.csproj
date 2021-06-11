@@ -103,5 +103,26 @@
   <ItemGroup>
     <Resource Include="arrow-156792_1280.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="png-transparent-arrow-euclidean-plot-arrow-angle-triangle-3d-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image027.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="arrow-310623__480.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="raskraska_chelovek33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sticker-png-sun-drawing-yellow-circle-orange-line-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="152611_1413631571.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kartinki-Raskraski-Ptitsy-Dlia-Detei-4750.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

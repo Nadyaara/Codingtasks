@@ -30,10 +30,10 @@ namespace Игра
 
         private void tap_me_2_Click(object sender, RoutedEventArgs e)
         {
-            null1.Content = 0;
+            i = 0;
         }
 
-        private void button1_click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)
         {
             i++;
             null1.Content = i;
